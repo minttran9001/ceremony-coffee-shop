@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ceremony-coffee-shop/static/css/main.e9905d80.chunk.css",
-    "main.js": "/ceremony-coffee-shop/static/js/main.32ba4c15.chunk.js",
-    "main.js.map": "/ceremony-coffee-shop/static/js/main.32ba4c15.chunk.js.map",
+    "main.js": "/ceremony-coffee-shop/static/js/main.b3cd393e.chunk.js",
+    "main.js.map": "/ceremony-coffee-shop/static/js/main.b3cd393e.chunk.js.map",
     "runtime-main.js": "/ceremony-coffee-shop/static/js/runtime-main.9e7ce469.js",
     "runtime-main.js.map": "/ceremony-coffee-shop/static/js/runtime-main.9e7ce469.js.map",
     "static/js/2.815262f7.chunk.js": "/ceremony-coffee-shop/static/js/2.815262f7.chunk.js",
     "static/js/2.815262f7.chunk.js.map": "/ceremony-coffee-shop/static/js/2.815262f7.chunk.js.map",
     "index.html": "/ceremony-coffee-shop/index.html",
-    "precache-manifest.2c458b737ec60c8e3cfdd459eaeb8080.js": "/ceremony-coffee-shop/precache-manifest.2c458b737ec60c8e3cfdd459eaeb8080.js",
+    "precache-manifest.3fee755198afba84783b3c9a1f53fa7b.js": "/ceremony-coffee-shop/precache-manifest.3fee755198afba84783b3c9a1f53fa7b.js",
     "service-worker.js": "/ceremony-coffee-shop/service-worker.js",
     "static/css/main.e9905d80.chunk.css.map": "/ceremony-coffee-shop/static/css/main.e9905d80.chunk.css.map",
     "static/js/2.815262f7.chunk.js.LICENSE.txt": "/ceremony-coffee-shop/static/js/2.815262f7.chunk.js.LICENSE.txt",
@@ -86,6 +86,6 @@
     "static/js/runtime-main.9e7ce469.js",
     "static/js/2.815262f7.chunk.js",
     "static/css/main.e9905d80.chunk.css",
-    "static/js/main.32ba4c15.chunk.js"
+    "static/js/main.b3cd393e.chunk.js"
   ]
 }
