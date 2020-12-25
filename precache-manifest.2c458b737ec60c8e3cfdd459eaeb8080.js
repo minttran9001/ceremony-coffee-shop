@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "177427a9ada303dbbdc0d5e400ff9670",
+    "revision": "836bf07df05ba6272f854b12fdee8978",
     "url": "/ceremony-coffee-shop/index.html"
   },
   {
-    "revision": "b1ded2a698ae7d971741",
+    "revision": "eedd81595b2902cc3469",
     "url": "/ceremony-coffee-shop/static/css/main.e9905d80.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ceremony-coffee-shop/static/js/2.815262f7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b1ded2a698ae7d971741",
-    "url": "/ceremony-coffee-shop/static/js/main.68035cef.chunk.js"
+    "revision": "eedd81595b2902cc3469",
+    "url": "/ceremony-coffee-shop/static/js/main.32ba4c15.chunk.js"
   },
   {
     "revision": "f9c2ddf1f8ba311c6ba1",
