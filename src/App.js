@@ -28,7 +28,7 @@ import PopUpRegister from "./components/PopUpRegister/PopUpRegister";
 import Checkout from "./components/Checkout/Checkout";
 import EditProfile from './pages/EditProfile'
 const routes = [
-  { path: "/ceremony-coffee-shop", name: "Home", Component: Home },
+  { path: "/", name: "Home", Component: Home },
   { path: "/shop", name: "Shop", Component: Shop },
   {
     path: "/shop/:productId",
