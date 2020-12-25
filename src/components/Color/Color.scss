@@ -1,0 +1,214 @@
+@media screen and (max-width:900px) {
+
+    .color {
+        margin-top: 100px;
+        position: relative;
+        padding: 40;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .color video {
+        width: 70%;
+        margin: auto;
+        opacity: 0;
+        transform: translate(-120%);
+        height: 100vh;
+    }
+
+    .color video::-webkit-media-controls-timeline {
+        display: none;
+    }
+
+    .color video::-webkit-media-controls {
+        display: none;
+    }
+
+    .color .colorText {
+
+        width: 70%;
+        height: 100%;
+        // position: absolute;
+        // opacity: 0;
+        // transform: translateX(120%);
+        // color: white;
+        margin: 0px auto;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        span {
+            font-style: italic;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+    }
+
+    .colorTitle {
+        font-size: 12px;
+        letter-spacing: 2px;
+        height: 20px;
+        overflow: hidden;
+        opacity: 0;
+
+        transform: translateY(100%);
+
+    }
+
+    .colorText h5 {
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        color: #a9855b;
+        padding-top: 20px;
+        position: sticky;
+        font-size: 30px;
+        letter-spacing: 4px;
+        opacity: 0;
+
+        transform: translateY(100%);
+    }
+
+    .colorText button {
+        opacity: 0;
+
+        transform: translateY(100%);
+        color: black;
+        position: relative;
+        background-color: transparent;
+        padding: 20px;
+        font-family: 'Philosopher', sans-serif;
+        border: none;
+        outline: none;
+        letter-spacing: 2px;
+        font-size: 12px;
+        &:hover{
+            &::before{
+              width: 100%;
+            }
+          }
+          &::before{
+            content: '';
+            position: absolute;
+            transition: all .5s;
+            height: 1px;
+            bottom: 0;
+            background-color: #222;
+            width: 0%;
+            left: 0;
+          }
+    }
+}
+
+@media screen and (min-width:900px) {
+    .color {
+        margin: 150px auto;
+        position: relative;
+        display: flex;
+        background-image: url("../../images//100ppi/beans3.png");
+        background-repeat: no-repeat;
+        background-size: 170px auto;
+        background-position: top left;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .color video {
+        width: 40%;
+        opacity: 0;
+        z-index: -10;
+        display: flex;
+        padding-left: 50px;
+        margin: auto;
+        justify-content: center;
+        transform: translateX(120%);
+        height: 100vh;
+    }
+
+    .color video::-webkit-media-controls-timeline {
+        display: none;
+    }
+
+    .color video::-webkit-media-controls {
+        display: none;
+    }
+
+    .color .colorText {
+        overflow: hidden;
+        width: 50%;
+        padding-left: 100px;
+        text-align: center;
+        height: 100%;
+        z-index: 10;
+
+        margin: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        span {
+            font-style: italic;
+            font-size: 14px;
+            width:70%;
+            margin: 10px 0;
+        }
+    }
+
+    .colorTitle {
+        font-size: 12px;
+        letter-spacing: 2px;
+        height: 20px;
+        overflow: hidden;
+        opacity: 0;
+
+        transform: translateY(100%);
+
+    }
+
+    .colorText h5 {
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        color: #a9855b;
+        padding-top: 20px;
+        position: sticky;
+        font-size: 30px;
+        letter-spacing: 4px;
+        opacity: 0;
+
+        transform: translateY(100%);
+    }
+
+    .colorText button {
+        opacity: 0;
+
+        transform: translateY(100%);
+        color: black;
+        background-color: transparent;
+        padding: 5px 0;
+        margin-top: 10px;
+        font-family: 'Philosopher', sans-serif;
+        border: none;
+        outline: none;
+        letter-spacing: 2px;
+        font-size: 12px;
+        position: relative;
+        &:hover{
+            &::before{
+              width: 100%;
+            }
+          }
+          &::before{
+            content: '';
+            position: absolute;
+            transition: all .5s;
+            height: 1px;
+            bottom: 0;
+            background-color: #222;
+            width: 0%;
+            left: 0;
+          }
+    }
+}

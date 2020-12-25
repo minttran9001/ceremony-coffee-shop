@@ -1,0 +1,897 @@
+@media screen and (max-width:900px){
+    .howWrapper.open {
+        visibility: visible;
+        opacity: 1;
+        
+        .howItWorks {
+            transform: translateX(0);
+        }
+    }
+    
+    .howWrapper {
+        position: absolute;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        z-index: 10000;
+        visibility: hidden;
+        transition: all 1s;
+        opacity: 0;
+        .howItWorks {
+            z-index: 10001;
+            transition: all 1s ease;
+            transform: translateX(-100%);
+            transition: all 1s;
+            left: 0;
+            height: 100vh;
+            width: 70%;
+            padding: 3rem 0;
+            margin: auto;
+            background-color: #fff;
+            overflow-y: scroll;
+            position: absolute;
+            .title{
+                padding: 30px;
+    
+                justify-content: space-between;
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                h5{
+                    font-size: 20px;
+                }
+                span{
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+            }
+            .description{
+               
+    
+                padding: 30px;
+                p{
+                    letter-spacing: 0;
+                    padding-bottom: 40px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    
+    .subBuild {
+        width: 80%;
+        margin: auto;
+        height: 100%;
+    
+        .subTitle {
+            
+            margin-bottom:50px;
+            p {
+                font-size: 20px;
+            }
+    
+        }
+    
+        .buildContainer {
+            display: flex;
+            margin-top: 70px;
+            width: 100%;
+            margin: auto;
+            justify-content: space-evenly;
+            flex-direction: column;
+           
+            .gridItem {
+                margin: auto;
+                width: 100%;
+                flex: 1;
+                .buildDes {
+                    margin-bottom: 50px;
+    
+                    h5 {
+                        margin-bottom: 15px;
+                        font-size: 15px;
+    
+                    }
+    
+                    p {
+                        font-size: 13px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .buildSide:hover{
+                    span {
+                        margin-left: 10px;
+                    }
+    
+                    .icon {
+                        margin-right: 10px;
+                    }
+                }
+                .buildSide {
+                    span,.icon{
+                        transition: all 1s;
+                    }
+                    cursor: pointer;
+                    margin-top: 30px;
+                    padding: 15px 0;
+                    justify-content: space-between;
+                    display: flex;
+                    border-top: 1px solid rgb(206, 206, 206);
+                    border-bottom: 1px solid rgb(206, 206, 206);
+                    font-size: 13px;
+                }
+    
+                .buildImg {
+                    margin-top: 20px;
+                    width: 100%;
+    
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            
+            .gridItem:nth-child(2) {
+                border-bottom: 1px solid rgba($color: #b1b0b0, $alpha: 1.0);
+                .buildOption:hover {
+                    span {
+                        margin-left: 10px;
+                    }
+    
+                    .icon {
+                        margin-right: 10px;
+                    }
+                }
+    
+                .buildOption.isActive {
+    
+                    span,
+                    .icon {
+                        color: #886946;
+                        font-weight: bold;
+                    }
+                }
+                
+                .buildOption {
+    
+                    span,
+                    .icon {
+                        transition: all 1s ease;
+                    }
+    
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 13px;
+                    padding: 20px 0;
+                    border-top: 1px solid rgb(206, 206, 206);
+                }
+            }
+            .third{
+                height: 100%;
+            }
+            .gridItem:nth-child(3) {
+                
+                position: relative;
+                height:100%;
+                margin: 100px auto;
+                padding:50% 0;
+                .selectWrapper.isActive {
+                    opacity: 1;
+                    z-index: 1;
+                    transform: translateY(0);
+                }
+    
+                .selectWrapper {
+                    overflow-y: scroll;
+                    top: 0;
+                    height: 70%;
+                    position: absolute;
+                    z-index: -1;
+                    width: 100%;
+                    transition: all .6s ease;
+                    transform: translateY(100%);
+                    opacity: 0;
+                }
+    
+                .selectionPart {
+                    width: 100%;
+                    position: relative;
+    
+                    height: 70%;
+    
+                    .selectName {
+                        display: flex;
+                        margin-bottom: 50px;
+                        font-size: 20px;
+                        flex-direction: column;
+    
+                        h4 {
+                            letter-spacing: 1px;
+                            margin-bottom: 10px;
+                        }
+    
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+    
+                    .buildSelect {
+                        padding: 10px;
+                        border-top: 1px solid rgb(206, 206, 206);
+                        justify-content: space-between;
+                        display: flex;
+                        height: 150px;
+                        align-items: center;
+                        font-size: 13px;
+    
+                        .selection {
+                            width: 50%;
+    
+                            h4 {
+                                margin-bottom: 10px;
+                                font-size: 20px;
+                            }
+                        }
+    
+                        .select {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+    
+                            button {
+                                border: none;
+                                outline: none;
+                                padding: 10px;
+                                background-color: #000;
+                                color: #fff;
+                            }
+                        }
+                    }
+    
+                    .searchBox {
+                        width: 100%;
+                        padding: 0 15px;
+                        margin-bottom: 20px;
+                        input {
+                            padding: 15px;
+                            border: none;
+                            outline: none;
+                            background-color: rgba(0, 0, 0, 0.1);
+                            width: 100%;
+                        }
+                    }
+                    .shippingTime{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        h5{
+                            font-size: 15px;
+                        }
+                        span{
+                            margin-right: 10px;
+                            font-size: 15px;
+                        }
+                    }
+                    .item{
+                        button:hover{
+                            background-color: rgb(153, 152, 152);
+                          }
+                    }
+                    .item{
+                        cursor: pointer;
+                        position: relative;
+                    }
+                
+                    .buildSelect.isSelected,.buildProduct.isSelected{
+                        .select{
+                            .unSelect{
+                                z-index: -1;
+                                opacity: 0;
+                            }
+                            .selected{
+                                z-index: 1;
+                                color:#222;
+                                background:#DDCDE9;
+                                opacity: 1;
+                            }
+                        }
+                        
+                    }
+                    .buildSelect{
+                        button{
+                            right: 0;
+                        }
+                    }
+                    .buildSelect,.buildProduct{
+                        .select{
+                            button{
+                                bottom: 0px;
+                                position: absolute;
+                            }
+                            .unSelect{
+                                opacity: 1;
+                                transition: all .5s;
+                            }
+                            .selected{
+                                opacity: 0;
+                                transition: all .5s;
+                            }
+                        }
+                    }
+                    .buildProduct {
+                        padding: 30px;
+                        display: flex;
+                        border-top: 1px solid rgb(206, 206, 206);
+                        margin: 10px 0;
+                        width: 100%;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+    
+                        .selection {
+                            display: flex;
+                            flex-direction: column;
+                            width: 50%;
+            
+                            justify-content: center;
+    
+                            img {
+                                margin: auto;
+                                margin-bottom: 10px;
+                                width: 150px;
+                            }
+    
+                            p {
+                                font-weight: bold;
+                                letter-spacing: 1px;
+                                text-align: center;
+                                font-size: 15px;
+                            }
+                            span{
+                                text-align: center;
+                                font-size: 15px;
+                            }
+                            .selected{
+                                background: red;
+                            }
+                            .updateSub{
+                                margin-bottom: 10px;
+                                span{
+                                    cursor: pointer;
+                                    font-size: 40px;
+                                }
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            
+                            .selectGroup {
+                                font-size: 15px;
+                                display: flex;
+                                justify-content: space-between;
+                                margin: 10px 0;
+                            }
+    
+                        }
+    
+                        .select {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            button:hover{
+                                background-color: rgb(153, 152, 152);
+                              }
+                            button {
+                                border: none;
+                                outline: none;
+                                padding: 10px;
+                                background-color: #000;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+    
+                .subPrice {
+                    position: absolute;
+                    bottom: -100px;
+                    width: 100%;
+                    padding: 20px 10px;
+    
+                    .total {
+                        display: flex;
+                        width: 100%;
+                        font-size: 20px;
+                        justify-content: space-between;
+                    }
+    
+                    button {
+                        margin-top: 20px;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        padding: 20px;
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:900px){
+    .howWrapper.open {
+        visibility: visible;
+        opacity: 1;
+        
+        .howItWorks {
+            transform: translateX(0);
+        }
+    }
+    
+    .howWrapper {
+        position: absolute;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        z-index: 10000;
+        visibility: hidden;
+        transition: all 1s;
+        opacity: 0;
+        .howItWorks {
+            z-index: 10001;
+            transition: all 1s ease;
+            transform: translateX(-100%);
+            transition: all 1s;
+            left: 0;
+            height: 100vh;
+            width: 400px;
+            padding: 3rem 0;
+            margin: auto;
+            background-color: #fff;
+            overflow-y: scroll;
+            position: absolute;
+            .title{
+                padding: 30px;
+    
+                justify-content: space-between;
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                h5{
+                    font-size: 20px;
+                }
+                span{
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+            }
+            .description{
+               
+    
+                padding: 30px;
+                p{
+                    letter-spacing: 0;
+                    padding-bottom: 40px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .subBuild.fade{
+        .subTitle{
+            p{
+                transform: translateY(0);
+            }
+        }
+        .buildContainer{
+            .gridItem{
+      
+                transform: translateY(0);
+                transition: all 1s ease;
+                opacity:1;
+            }
+        }
+    }
+    .subBuild {
+        width: 100%;
+        height: 100%;
+    
+        .subTitle {
+            text-align: center;
+            overflow: hidden;
+            
+            p {
+                transition-delay: 2s;
+                transform: translateY(100%);
+                font-size: 20px;
+                transition: all 1s ease;
+            }
+    
+        }
+    
+        .buildContainer {
+            display: flex;
+            margin-top: 70px;
+            padding: 0 50px;
+            justify-content: space-evenly;
+            .gridItem:nth-child(2)
+            {
+                transition-delay: 0.3s;
+            }
+            .gridItem:nth-child(3)
+            {
+                transition-delay: 0.6s;
+            }
+            .gridItem {
+            
+                transform: translateY(100px);
+                transition: all .6s ease;
+                opacity:0;
+                flex: 1;
+                padding: 0 20px;
+                .buildDes {
+                    margin-bottom: 50px;
+    
+                    h5 {
+                        margin-bottom: 15px;
+                        font-size: 15px;
+    
+                    }
+    
+                    p {
+                        font-size: 13px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .buildSide:hover{
+                    span {
+                        margin-left: 10px;
+                    }
+    
+                    .icon {
+                        margin-right: 10px;
+                    }
+                }
+                .buildSide {
+                    span,.icon{
+                        transition: all 1s;
+                    }
+                    cursor: pointer;
+                    margin-top: 30px;
+                    padding: 15px 0;
+                    justify-content: space-between;
+                    display: flex;
+                    border-top: 1px solid rgb(206, 206, 206);
+                    border-bottom: 1px solid rgb(206, 206, 206);
+                    font-size: 13px;
+                }
+    
+                .buildImg {
+                    margin-top: 20px;
+                    width: 100%;
+    
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+    
+            .gridItem {
+                .buildOption:hover {
+                    span {
+                        margin-left: 10px;
+                    }
+    
+                    .icon {
+                        margin-right: 10px;
+                    }
+                }
+    
+                .buildOption.isActive {
+    
+                    span,
+                    .icon {
+                        color: #886946;
+                        font-weight: bold;
+                    }
+                }
+    
+                .buildOption {
+    
+                    span,
+                    .icon {
+                        transition: all 1s ease;
+                    }
+    
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 13px;
+                    padding: 20px 0;
+                    border-top: 1px solid rgb(206, 206, 206);
+                }
+            }
+    
+            .gridItem {
+                position: relative;
+    
+                .selectWrapper.isActive {
+                    opacity: 1;
+                    z-index: 1;
+                    transform: translateY(0);
+                }
+    
+                .selectWrapper {
+                    position: absolute;
+                    overflow-y: scroll;
+                    height: 70%;
+                    z-index: -1;
+                    width: 100%;
+                    transition: all .6s ease;
+                    transform: translateY(100%);
+                    opacity: 0;
+                }
+    
+                .selectionPart {
+                    width: 100%;
+                    position: relative;
+                    
+                    height: 70%;
+    
+                    .selectName {
+                        display: flex;
+                        margin-bottom: 50px;
+                        font-size: 20px;
+                        flex-direction: column;
+    
+                        h4 {
+                            letter-spacing: 1px;
+                            margin-bottom: 10px;
+                        }
+    
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+                    .buildSelect:hover{
+                        .selection{
+                            margin-left: 10px;
+                        }
+                        .select{
+                            margin-right: 10px;
+                        }
+                        
+                    }
+                    .buildSelect {
+                        
+                        padding: 10px;
+                        border-top: 1px solid rgb(206, 206, 206);
+                        justify-content: space-between;
+                        display: flex;
+                        height: 150px;
+                        flex-direction: column;
+                     
+                        font-size: 13px;
+                        .giftSelect{
+                            margin-top: 10px;
+                            .fromTo{
+                                display: flex;
+                                flex-direction: column;
+                                input{
+                                    width: 50%;
+                                    padding: 20px;
+                                     background-color: transparent;
+                                     border:1px solid rgb(216, 216, 216);
+                                     outline: none;
+                                }
+                                
+                            }
+                            textarea{
+                                padding: 20px;
+                                height: 100px;
+                                border: 1px solid rgb(216, 216, 216);
+                                background-color: transparent;
+                                outline: none;
+                            }
+                        }
+                        .selection {
+                            transition: all 1s;
+                            width: 50%;
+    
+                            h4 {
+                                margin-bottom: 10px;
+                                font-size: 20px;
+                            }
+                        }
+    
+                        .select {
+                            transition: all 1s;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100%;
+                            button {
+                                border: none;
+                                outline: none;
+                                padding: 10px;
+                                background-color: #000;
+                                color: #fff;
+                            }
+                        }
+                    }
+    
+                    .searchBox {
+                        width: 100%;
+                        padding: 0 15px;
+                        margin-bottom: 20px;
+                        input {
+                            padding: 15px;
+                            border: none;
+                            outline: none;
+                            background-color: rgba(0, 0, 0, 0.1);
+                            width: 100%;
+                        }
+                    }
+                    .shippingTime{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        h5{
+                            font-size: 15px;
+                        }
+                        span{
+                            margin-right: 10px;
+                            font-size: 15px;
+                        }
+                    }
+                    .item{
+                        button:hover{
+                            background-color: rgb(153, 152, 152);
+                          }
+                    }
+                    .item{
+                        cursor: pointer;
+                        position: relative;
+                    }
+                
+                    .buildSelect.isSelected,.buildProduct.isSelected{
+                        .select{
+                            .unSelect{
+                                z-index: -1;
+                                opacity: 0;
+                            }
+                            .selected{
+                                z-index: 1;
+                                color:#222;
+                                background:#DDCDE9;
+                                opacity: 1;
+                            }
+                        }
+                        
+                    }
+                    .buildSelect{
+                        button{
+                            right: 0;
+                        }
+                    }
+                    .buildSelect,.buildProduct{
+                        .select{
+                            button{
+                                bottom: 0px;
+                                position: absolute;
+                            }
+                            .unSelect{
+                                opacity: 1;
+                                transition: all .5s;
+                            }
+                            .selected{
+                                opacity: 0;
+                                transition: all .5s;
+                            }
+                        }
+                    }
+                    .buildProduct {
+                        padding: 30px;
+                        display: flex;
+                        border-top: 1px solid rgb(206, 206, 206);
+                        margin: 10px 0;
+                        width: 100%;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+    
+                        .selection {
+                            display: flex;
+                            flex-direction: column;
+                            width: 50%;
+            
+                            justify-content: center;
+    
+                            img {
+                                margin: auto;
+                                margin-bottom: 10px;
+                                width: 150px;
+                            }
+    
+                            p {
+                                font-weight: bold;
+                                letter-spacing: 1px;
+                                text-align: center;
+                                font-size: 15px;
+                            }
+                            span{
+                                text-align: center;
+                                font-size: 15px;
+                            }
+                            .selected{
+                                background: red;
+                            }
+                            .updateSub{
+                                margin-bottom: 10px;
+                                span{
+                                    cursor: pointer;
+                                    font-size: 40px;
+                                }
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            
+                            .selectGroup {
+                                font-size: 15px;
+                                display: flex;
+                                justify-content: space-between;
+                                margin: 10px 0;
+                            }
+    
+                        }
+    
+                        .select {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            button:hover{
+                                background-color: rgb(153, 152, 152);
+                              }
+                            button {
+                                border: none;
+                                outline: none;
+                                padding: 10px;
+                                background-color: #000;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+    
+                .subPrice {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    padding: 20px 10px;
+    
+                    .total {
+                        display: flex;
+                        width: 100%;
+                        font-size: 20px;
+                        justify-content: space-between;
+                    }
+    
+                    button {
+                        margin-top: 20px;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        padding: 20px;
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

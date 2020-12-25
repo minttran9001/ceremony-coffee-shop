@@ -1,0 +1,204 @@
+@media screen and (max-width:900px)
+{
+    .yourSub{
+        margin: auto;
+        padding-top: 50px;
+        width: 80%;
+        height: 100%;
+        .title{
+            text-align: center;
+            margin-bottom: 30px;
+            width: 70%;
+            margin: auto;
+            p{
+                font-size: 20px;
+            }
+            span{
+                font-size: 15px;
+                margin: 50px 0;
+                font-style: italic;
+                
+            }
+        }
+        .yourSubSection
+        {
+            width: 100%;
+            margin: auto;
+            
+            overflow-x: scroll;
+            height: 100%;
+            .subItem:nth-child(1)
+            {
+                height: 100px;
+                .listCoffee{
+                    height: 100%;
+                    overflow:hidden;
+    
+                }
+                border-top: none;
+                span{
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+            }
+            .subItem{
+                border-top: 1px solid rgb(206, 206, 206);
+                padding: 20px 0;
+                margin: 30px 0;
+                height: 150px;
+                display: flex;
+                
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                span{
+                    font-size: 15px;
+                }
+                a{
+                    color: #222;
+                    font-size: 15px;
+                }
+                .subImg{
+                    flex: 1;
+                    img{
+                        width: 80px;
+                    }
+                }
+                .listCoffee{
+                    flex-direction: column;
+                    align-items: center;
+                    display: flex;
+                    width: 100%;
+                 display: none;
+                   
+                    height: 100%;
+                    .listItem{
+                        margin:20px 0;
+                        width: 100%;
+                        height: 100%;
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        span{
+                            display: none;
+                        }
+                        img{
+                           
+                            margin-right: 20px;
+                            width: 100%;
+                        }
+                    }
+                }
+                .delivery{
+                    flex: 1;
+                }
+                .price{
+                    flex:1;
+                }
+                .edit{
+                    flex:.5;
+                }
+                
+            }
+        }
+    }
+}
+@media screen and (min-width:900px)
+{
+    .yourSub{
+        width: 100%;
+        height: 100%;
+        .title{
+            text-align: center;
+            margin-bottom: 30px;
+            width: 50%;
+            margin: auto;
+            p{
+                font-size: 20px;
+            }
+            span{
+                font-size: 15px;
+                margin: 50px 0;
+                font-style: italic;
+                
+            }
+        }
+        .yourSubSection
+        {
+            width: 80%;
+            margin: auto;
+            height: 100%;
+            .subItem:nth-child(1)
+            {
+                height: 100px;
+                .listCoffee{
+                    height: 100%;
+                    overflow:hidden;
+    
+                }
+                border-top: none;
+                span{
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+            }
+            .subItem{
+                border-top: 1px solid rgb(206, 206, 206);
+                padding: 20px 0;
+                margin: 30px 0;
+                height: 350px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                span{
+                    font-size: 15px;
+                }
+                a{
+                    color: #222;
+                    font-size: 15px;
+                }
+                .subImg{
+                    flex: 1;
+                    img{
+                        width: 200px;
+                    }
+                }
+                .listCoffee{
+                    flex: 1;
+                    flex-direction: column;
+                    align-items: center;
+                    display: flex;
+                    width: 100%;
+                    padding: 20px;
+                    overflow-y: scroll;
+                    height: 100%;
+                    .listItem{
+                        margin:20px 0;
+                        width: 100%;
+                        height: 100%;
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        
+                        img{
+                            margin-right: 20px;
+                            width: 30%;
+                        }
+                    }
+                }
+                .delivery{
+                    flex: 1;
+                }
+                .price{
+                    flex:1;
+                }
+                .edit{
+                    flex:.5;
+                }
+                
+            }
+        }
+    }
+}

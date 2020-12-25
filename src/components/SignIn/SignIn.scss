@@ -1,0 +1,60 @@
+@media screen and (min-width:900px)
+{
+    .signIn{
+        width: 100%;
+        display: flex;
+        padding: 100px 200px;
+        align-items: center;
+        img{
+            flex: .5;
+            width: 400px;
+            margin-right: 100px;
+        }
+        .loginBox{
+            flex: 1;
+            h6{
+                font-family: 'Philosopher', sans-serif;
+                font-size: 30px;
+                color: #a9855b;
+                letter-spacing: 2.5px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .beans{
+        display: none;
+    }
+}
+@media screen and (max-width:900px)
+{
+    .signIn{
+        .beans{
+            left: 0;
+            top: 100px;
+            position: absolute;
+            display: block;
+            width: 100px;
+        }
+        width: 80%;
+        display: flex;
+        margin: auto;
+        padding: 200px 0;
+        align-items: center;
+        img{
+            display: none;
+            flex: .5;
+            width: 400px;
+            margin-right: 100px;
+        }
+        .loginBox{
+            flex: 1;
+            h6{
+                font-family: 'Philosopher', sans-serif;
+                font-size: 30px;
+                color: #a9855b;
+                letter-spacing: 2.5px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

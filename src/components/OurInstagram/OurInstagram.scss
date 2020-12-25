@@ -1,0 +1,175 @@
+@media screen and (max-width:900px)
+{
+    .ourInsta{
+        display: flex;
+        width: 80%;
+        background-image: url('../../images/100ppi/mini-vineyard-paint-2.png');
+        background-size: 200px auto;
+        flex-direction: column;
+        background-position: top left;
+        background-repeat: no-repeat;
+        margin: 100px auto;
+        .ourInstaTitle{
+            position: relative;
+            min-height: 100%;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            transition:  1s;
+            margin: 50px 0;
+            justify-content: center;
+            :hover{
+                color:rgba($color: #222, $alpha: 0.6)
+            }
+            .title{
+                overflow: hidden;
+                p{
+                    font-size: 12px;
+                    font-style: italic;
+                }
+            }
+          
+            h5{
+                font-size: 18px;
+            }
+            img{
+                width:30px;
+                margin: 10px auto;
+            }
+            
+        }
+        .ourInstaMiddle{
+            margin:auto;
+            img{
+                width:100%;
+            }
+        }
+        .ourInstaGrid{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 1fr;
+            gap:10px;
+            margin:40px auto;
+            .imgGroup
+            {
+                overflow: hidden;
+                width: 100%;
+                 margin: auto;
+                position: relative;
+                span{
+                    z-index: 10;
+                    border-radius: 50%;
+                    top: 10px;
+                    left: 10px;
+                    position: absolute;
+                    font-size: 17px;
+                    background-color: #fff;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                img{
+                    z-index: -10;
+                    width: 100%;
+                }
+              
+            }
+        }
+       
+    }
+    .animTitle{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    .animImg{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+@media screen and (min-width:900px)
+{
+    .ourInsta{
+        display: flex;
+        width: 90%;
+        background-image: url('../../images/100ppi/mini-vineyard-paint-2.png');
+        background-size: 300px auto;
+    
+        background-repeat: no-repeat;
+        margin: 100px auto;
+        .ourInstaTitle{
+            position: relative;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            transition:  1s;
+            justify-content: center;
+            :hover{
+                color:rgba($color: #222, $alpha: 0.6)
+            }
+            .title{
+                padding-left: 50px;
+
+                overflow: hidden;
+            }
+          
+            h5{
+                font-size: 20px;
+            }
+            img{
+                position: absolute;
+                width:30px;
+                top: 0;
+                
+            }
+        }
+        .ourInstaMiddle{
+            margin-left: 100px;
+            img{
+                width:300px;
+            }
+        }
+        .ourInstaGrid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr;
+            gap:15px;
+            margin-left: 15px;
+            .imgGroup
+            {
+                overflow: hidden;
+                width: 140px;
+                position: relative;
+                span{
+                    z-index: 10;
+                    border-radius: 50%;
+                    top: 10px;
+                    left: 10px;
+                    position: absolute;
+                    font-size: 17px;
+                    background-color: #fff;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                img{
+                    z-index: -10;
+                    width: 140px;
+                }
+              
+            }
+        }
+       
+    }
+    .animTitle{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    .animImg{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}

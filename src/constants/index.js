@@ -1,0 +1,8 @@
+export const VIEW_CART = 'VIEW_CART'
+export const ADD_TO_CART = 'ADD_TO_CART'
+export const VIEW_PRODUCT = 'VIEW_PRODUCT'
+export const GET_PRODUCT_BY_ID='GET_PRODUCT_BY_ID'
+export const SORT_PRODUCT_BY = 'SORT_PRODUCT_BY'
+export const TOGGLE_SIDEBAR='TOGGLE_SIDEBAR'
+export const REMOVE_ITEM = 'REMOVE_ITEM'
+export const CHANGE_QUANTITY = 'CHANGE_QUANTITY'

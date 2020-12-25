@@ -1,0 +1,526 @@
+@media screen and (max-width:900px)
+{
+    .coldBrewContact{
+        width: 100%;
+        margin: 100px auto 0 auto;
+        height: 100%;
+        .coldBrewQuote{
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            margin-bottom:50px;
+            p{
+                font-size: 15px;
+                font-style: italic;
+               
+                letter-spacing: 4px;
+            }
+            p:nth-child(1){
+                transition:all 1s;
+            }
+            p:nth-child(2){
+              transition:all 1.3s;
+          }
+          p:nth-child(3){
+              transition:all 1.6s;
+          }
+          
+        }
+        .quoteAuthor.fade{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .quoteAuthor{
+            transform: translateY(50px);
+            opacity: 0;
+            overflow: hidden;
+            transition: all 1s ease;
+            text-align: center;
+            margin-bottom: 100px;
+            p:nth-child(1){
+                margin: 30px;
+                font-size: 12px;
+                letter-spacing: 2px;
+            }
+            
+        }
+        .coldBrewImage{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            flex-direction: column;
+            
+            .pouringImage.right{
+                transform: translateX(100%);
+                opacity: 0;
+                transition: all 1s ease;
+            }
+            .pouringImage.right.fade{
+                transform: translateX(0%);
+                opacity: 1;
+                transition: all 1s ease;
+            }
+            .pouringImage.left.fade{
+                transform: translateX(0%);
+                opacity: 1;
+                transition: all 1s ease;
+            }
+            .pouringImage.left{
+                transform: translateX(-100%);
+                opacity: 0;
+                transition: all 1s ease;
+            }
+            .pouringImage{
+                margin-bottom: 50px;
+                display: flex;
+                flex-direction: column;
+               
+                img{
+                  
+                    width: 100%;
+                    
+                }
+                .pouringTitle{
+                    color: rgba($color: #000000, $alpha: 0.6);
+                    font-style: italic;
+                }
+            }
+        }
+        .coldBrewOrder.fade{
+            transform: translateY(0);
+            opacity: 1;
+            .title{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .coldBrewOrder{
+            transform: translateY(50px);
+            opacity: 0;
+            transition: all 1s;
+            overflow: hidden;
+            margin: 100px auto;
+            width: 80%;
+            .title{
+                flex: 0.5 1 50px;
+                font-size: 20px;
+                letter-spacing: 2px;
+                margin-bottom: 50px;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                .coldBrewImage{
+                    flex: 1;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .coldBrewDetails{
+                    flex-direction: column;
+                    flex: 1;
+                   
+                    h6{
+                        margin: 20px 0;
+                        font-size: 14px;
+                        letter-spacing: 2px;
+                    }
+                    p{
+                        font-size: 12px;
+                        letter-spacing: 1.2px;
+                        font-style: italic;
+                    }
+                    .price{
+                        font-size: 12px;
+                        font-style: normal;
+                        margin: 10px 0;
+                    }
+                    .coldBrewBtn{
+                        padding: 50px 0;
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        justify-content: flex-start;
+                        .moreInfo{
+                            transition: all 1s;
+                            background-color: white;
+                            outline: none;
+                            border: none;
+                            justify-content: center;
+                            padding: 20px;
+                            display:flex;
+                            align-items: center;
+                            letter-spacing: 1.5px;
+                            font-family: 'Philosopher', sans-serif;
+                            color: #000;
+                          }
+                          .moreInfo:hover{
+                            background-color: rgba($color: #000000, $alpha: 0.1);
+
+                          }
+                        button{
+                            cursor: pointer;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        width: 130px;
+                        background-color: black;
+                        color:white;
+                        height: 50px;
+                        border:none;
+                        margin-right: 10px;
+                        font-family: 'Philosopher', sans-serif;
+                        outline: none;
+                        position: relative;
+                        transform: translateY(50px);
+                      
+                        letter-spacing: 2px;
+                        transition: all .5s;
+                        }
+                    }
+                  
+                     button:hover{
+                        background-color: rgba($color: #000000, $alpha: 0.7);
+                    }
+            }
+            }
+        }
+        .coldBrewInfo{
+            margin: 100px auto;
+            width: 80%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            img{
+                width: 100%;
+            }
+            .infoGroup.one.fade{
+                transform: translateY(0);
+                opacity: 1;
+                transition: all 1.2s;
+            }
+            .infoGroup.two.fade{
+                transform: translateY(0);
+                opacity: 1;
+                transition: all 1.4s;
+            }
+            .infoGroup.three.fade{
+                transform: translateY(0);
+                opacity: 1;
+                transition: all 1.6s;
+            }
+            .infoGroup{
+                transform: translateY(50px);
+                opacity: 0;
+                transition: all 1s;
+                padding: 30px 0;
+                border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+                display: flex;
+               
+                .icon{
+                    width: 20%;
+                    font-size: 140px;
+                    margin-right: 50px;
+                    color: #222;
+                }
+                div{
+                    width: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h6{
+                        font-size: 17px;
+                        letter-spacing: 3px;
+                    }
+                    p{
+                        font-size: 12px;
+                        margin: 10px 0;
+                        letter-spacing: 1px;
+                        font-style: italic;
+                        color: rgba($color: #000000, $alpha: 0.7);
+                    }
+                }
+               
+            }
+            .infoGroup:last-child{
+                border-bottom: none;
+            }
+        }
+        hr{
+            width: 100px;
+            margin: auto;
+        }
+    }
+}
+@media screen and (min-width:900px)
+{
+    .coldBrewContact{
+        width: 100%;
+        height: 100%;
+        margin-top: 100px;
+        .coldBrewQuote.fade{
+            p{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .coldBrewQuote{
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            margin-bottom:50px;
+            p{
+                overflow: hidden;
+                font-size: 24px;
+                opacity: 0;
+                font-style: italic;
+                transform: translateY(30px);
+                letter-spacing: 4px;
+            }
+          p:nth-child(1){
+              transition:all 1s;
+          }
+          p:nth-child(2){
+            transition:all 1.3s;
+        }
+        p:nth-child(3){
+            transition:all 1.6s;
+        }
+        }
+        .quoteAuthor.fade{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .quoteAuthor{
+            opacity: 0;
+            transition: all 1s ease;
+            transform: translateY(50px);
+            text-align: center;
+            overflow: hidden;
+            margin-bottom: 100px;
+            p:nth-child(1){
+                margin: 30px;
+                font-size: 15px;
+                letter-spacing: 2px;
+            }
+            
+        }
+        .coldBrewImage{
+            display: flex;
+            .pouringImage.right{
+                transform: translateX(100%);
+                opacity: 0;
+                transition: all 1s ease;
+            }
+            .pouringImage.right.fade{
+                transform: translateX(0%);
+                opacity: 1;
+                transition: all 1s ease;
+            }
+            .pouringImage.left.fade{
+                transform: translateX(0%);
+                opacity: 1;
+                transition: all 1s ease;
+            }
+            .pouringImage.left{
+                transform: translateX(-100%);
+                opacity: 0;
+                transition: all 1s ease;
+            }
+            .pouringImage{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                  
+                    width: 80%;
+                   
+                }
+                .pouringTitle{
+                    width: 80%;
+                    color: rgba($color: #000000, $alpha: 0.6);
+                    font-style: italic;
+                }
+            }
+        }
+        .coldBrewOrder.fade{
+            transform: translateY(0);
+            opacity: 1;
+            .title{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .coldBrewOrder{
+            margin: 100px auto;
+            transform: translateY(50px);
+            opacity: 0;
+            transition: all 1s;
+            overflow: hidden;
+            .title{
+                transform: translateY(30px);
+                opacity: 0;
+                transition-delay: 1s;
+                transition: all 1s ease;
+                flex: 0.5 1 50px;
+                align-self: center;
+                overflow: hidden;
+                font-size: 20px;
+                letter-spacing: 2px;
+                margin: 100px;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                width: 80%;
+                justify-content: center;
+                .coldBrewImage{
+                    flex: 1;
+                    img{
+                        width: 250px;
+                    }
+                }
+                .coldBrewDetails{
+                    flex-direction: column;
+                    flex: 1;
+                    align-self: center;
+                    h6{
+                        margin: 20px 0;
+                        font-size: 14px;
+                        letter-spacing: 2px;
+                    }
+                    p{
+                        font-size: 12px;
+                        letter-spacing: 1.2px;
+                        font-style: italic;
+                    }
+                    .price{
+                        font-size: 12px;
+                        font-style: normal;
+                        margin: 10px 0;
+                    }
+                    .coldBrewBtn{
+                        display: flex;
+                        justify-content: flex-start;
+                        .moreInfo{
+                            transition: all 1s;
+                            background-color: white;
+                            outline: none;
+                            border: none;
+                            justify-content: center;
+                            padding: 20px;
+                            display:flex;
+                            align-items: center;
+                            letter-spacing: 1.5px;
+                            font-family: 'Philosopher', sans-serif;
+                            color: #000;
+                          }
+                          .moreInfo:hover{
+                            background-color: rgba($color: #000000, $alpha: 0.1);
+
+                          }
+                        button{
+                            cursor: pointer;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        width: 130px;
+                        background-color: black;
+                        color:white;
+                        height: 50px;
+                        border:none;
+                        margin-right: 10px;
+                        font-family: 'Philosopher', sans-serif;
+                        outline: none;
+                        position: relative;
+                        transform: translateY(50px);
+                      
+                        letter-spacing: 2px;
+                        transition: all .5s;
+                        }
+                    }
+                  
+                     button:hover{
+                        background-color: rgba($color: #000000, $alpha: 0.7);
+                    }
+            }
+            }
+        }
+        .coldBrewInfo{
+            margin: 100px auto;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .infoImg.fade{
+                transform: translateX(0);
+                opacity: 1;
+            }
+            .infoImg{
+                transform: translateX(100px);
+                opacity: 0;
+                transition: all 1s ease;
+                width: 400px;
+            }
+            .infoGroup.one.fade{
+                transform: translateY(0);
+                opacity: 1;
+                transition: all 1.2s;
+            }
+            .infoGroup.two.fade{
+                transform: translateY(0);
+                opacity: 1;
+                transition: all 1.4s;
+            }
+            .infoGroup.three.fade{
+                transform: translateY(0);
+                opacity: 1;
+                transition: all 1.6s;
+            }
+            .infoGroup{
+                transition: all 1s;
+                opacity: 0;
+                transform: translateY(50px);
+                padding: 30px 0;
+                border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+                display: flex;
+               
+                width: 400px;
+                .icon{
+                    width: 20%;
+                    font-size: 140px;
+                    margin-right: 50px;
+                    color: #222;
+                }
+                div{
+                    width: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h6{
+                        font-size: 17px;
+                        letter-spacing: 3px;
+                    }
+                    p{
+                        font-size: 12px;
+                        margin: 10px 0;
+                        letter-spacing: 1px;
+                        font-style: italic;
+                        color: rgba($color: #000000, $alpha: 0.7);
+                    }
+                }
+               
+            }
+            .infoGroup:last-child{
+                border-bottom: none;
+            }
+        }
+        hr{
+            width: 100px;
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,625 @@
+@media screen and (max-width:900px) {
+    .hero {
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        display: flex;
+        margin-bottom: 70px;
+        align-items: center;
+    }
+
+    .contentText {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .content {
+        display: flex;
+        width: 90%;
+        z-index: 10;
+        margin-top: 50px;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .text {
+        transition: all 1 ease;
+        color: #222;
+        position: absolute;
+        background-color: #fff;
+        opacity: 0;
+        bottom: -305px;
+        margin: auto;
+        padding: 20px;
+        box-shadow: -2px 4px 48px -20px rgba(0, 0, 0, 0.0);
+        -webkit-box-shadow: -2px 4px 48px -20px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: -2px 4px 48px -20px rgba(0, 0, 0, 0.0);
+        text-align: center;
+    }
+
+    .text h6 {
+        font-family: 'Playfair Display', serif;
+        font-size: 15px;
+        color: #a9855b;
+        margin: 0 0 20px 0px;
+        letter-spacing: 2px;
+    }
+
+    .text p {
+        width: 300px;
+        letter-spacing: 1px;
+        color: #000;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        font-style: italic;
+        line-height: 1.5rem;
+    }
+    .text .button{
+        width: 100%;
+        font-size: 13px;
+        color:#000
+    }
+    .text button {
+
+        background: transparent;
+        outline: none;
+        border: none;
+        font-family: 'Philosopher', sans-serif;
+        letter-spacing: 2px;
+        font-size: 8px;
+        width: 150px;
+
+        font-weight: 900;
+        margin-top: 30px;
+        cursor: pointer;
+
+        transition: all .5s;
+    }
+
+    .text button::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        width: 0;
+        margin: auto;
+        height: 2px;
+        background-color: #222;
+        transition: width .6s;
+    }
+
+    .text button:hover::before {
+
+        width: 85px;
+
+
+    }
+
+    .content img {
+        top: 0;
+        width: 90%;
+        position: relative;
+        height: 40%;
+        top: 0;
+        display: flex;
+        bottom: 0;
+
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        z-index: 9999;
+    }
+
+    .layer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .layer p {
+        color: #d88447;
+        font-size: 30px;
+
+    }
+
+    .layer-1 {
+        flex: 1;
+    }
+
+    .layer-2 {
+        flex: 1;
+
+    }
+
+    .layer-3 {
+        flex: 1;
+
+    }
+
+    .slider {
+        width: 100vw;
+        height: 100vh;
+
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        position: relative;
+        display: flex;
+    }
+
+    .slide {
+        position: absolute;
+        z-index: -10;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        min-width: 100vw;
+        font-size: 200px;
+        height: 100%;
+        transition: .5s;
+    }
+
+    .contentText {
+        position: absolute;
+    }
+
+    .goLeft {
+        position: absolute;
+        top: 50%;
+        z-index: 9998;
+        left: 10px;
+        outline: none;
+        border: none;
+        background: transparent;
+    }
+
+    .goRight {
+        position: absolute;
+        z-index: 9998;
+        border: none;
+        background: transparent;
+        top: 50%;
+        right: 10px;
+
+    }
+
+    .slideBtn {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn {
+        border-radius: 50%;
+        width: 50px;
+        outline: none;
+        height: 50px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transition: all 1s;
+    }
+
+    .btn:hover {
+        background: rgba(0, 0, 0, .1);
+    }
+
+    .btn img {
+        width: 20px;
+        border-radius: 50px;
+    }
+
+    .bg img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        width: 100vw;
+        height: 100vh;
+    }
+    .text.isSelected {
+        opacity: 1;
+    }
+    .slide.isSelected {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+
+
+}
+
+@media screen and (min-width:900px) {
+    .hero {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .content {
+            overflow: hidden;
+            display: flex;
+            width: 100%;
+            float: right;
+            height: 100%;
+            z-index: 10;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            
+            img {
+                bottom: 0;
+                width: 100%;
+                height: 90%;
+                position: absolute;
+            }
+        }
+
+        .contentText {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            right: 0;
+            position: absolute;
+        }
+
+        .carousel {
+            position: absolute;
+            width: 100vw;
+            bottom: 0px;
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            padding: 10px 0;
+            align-items: center;
+            background-color: #FCFBF9;
+            .carouselWrap{
+                display: flex;
+                width: 40%;
+                margin: auto;
+                flex-direction: row;
+                .btn{
+                    width:  40px;
+                    margin: 0 40px;
+                    cursor: pointer;
+                    height: 40px;
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            .carouselItem {
+                font-size: 14px;
+                cursor: pointer;
+                margin: auto;
+                width: 50px;
+                align-items: center;
+                position: relative;
+                display: flex;
+                transition: all 1s;
+                z-index: 1;
+
+                .num {
+                    color: #222;
+                    font-size: 12px;
+                   letter-spacing: 1px;
+                }
+
+                .pageName,
+                .pageWrap {
+                    transition: all 1s;
+                }
+            }
+
+            .carouselItem.isSelected {
+
+                .pageName {
+                    margin-right: 30px;
+                }
+
+                .pageWrap {
+                    margin-left: 30px;
+                }
+
+
+            }
+
+            .carouselItem.isSelected::before {
+                width: 100%;
+            }
+
+            .carouselItem::before {
+                content: '';
+                position: absolute;
+                transition: all 1s;
+                height: 100%;
+                width: 0%;
+                left: 0;
+                z-index: -1;
+                background: #cac3c8;
+            }
+        }
+
+    }
+
+
+
+    .text.isSelected {
+        opacity: 1;
+    }
+
+    .text {
+        overflow: hidden;
+        transition: all .5s ease;
+        color: #222;
+        position: absolute;
+        background-color: transparent;
+        left: 200px;
+        opacity: 0;
+        width: 400px;
+
+        .topText {
+            margin: 20px 0;
+
+        }
+
+        .subText {
+            .text-wrapper {
+                padding: 0 0 20px 0;
+              
+
+                span {
+
+                    color: #222;
+                    line-height: 20px;
+                }
+            }
+
+        }
+
+        .ml6 {
+            position: relative;
+        }
+
+        .ml6 .text-wrapper {
+            position: relative;
+            padding-top: 0.2em;
+            padding-right: 0.05em;
+            padding-bottom: 0.1em;
+            overflow-y: hidden;
+            display: inline-block;
+        }
+
+        .ml6 .letter {
+            line-height: 1em;
+            display: inline-block;
+        }
+    }
+
+    .text h6 {
+        font-family: 'Playfair Display', serif;
+        font-size: 25px;
+        color: #a9855b;
+        width: 70%;
+        margin: 0 0 20px 0px;
+        letter-spacing: 4px;
+        overflow: hidden;
+    }
+
+    .text p {
+        width: 400px;
+        overflow: hidden;
+        color: #222;
+        font-size: 15px;
+        width: 80%;
+        letter-spacing: 1px;
+    }
+
+    .text .button {
+        position: relative;
+        background: transparent;
+        outline: none;
+        border: none;
+        font-family: 'Philosopher', sans-serif;
+        letter-spacing: 3px;
+        color: #222;
+        font-size: 12px;
+        font-weight: 900;
+        margin-top: 30px;
+        padding: 0px 0;
+        cursor: pointer;
+        transition: all 1s;
+        &:hover{
+            .line{
+                margin-left: 30px;
+                width: 80px;
+            }
+        }
+        .line{
+            transition: all .5s ease;
+            margin-left: 20px;
+            width: 50px;
+            height: 1px;
+            background-color: #222;
+        }
+    }
+
+
+    .overlay {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        z-index: 1000000001;
+    }
+
+    .layer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        position: relative;
+
+        .bgLayer {
+            position: absolute;
+            top: 0;
+            min-width: 100%;
+            left: 0;
+            background-color: rgba(0, 0, 0, .2);
+
+            img {
+                width: 100%;
+                animation: fadeIn 2s ease-in-out;
+            }
+        }
+
+        .shadow {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            min-width: 100%;
+            height: 100%;
+            left: 0;
+            background-color: rgba(0, 0, 0, .2);
+        }
+    }
+
+    .layer p {
+        z-index: 10;
+        color: #222;
+        font-size: 30px;
+
+    }
+
+    .layer-1 {
+        flex: 1;
+    }
+
+    .layer-2 {
+        flex: 1;
+
+    }
+
+    .layer-3 {
+        flex: 1;
+
+    }
+
+    .slider {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        position: relative;
+        display: flex;
+    }
+
+    .slide {
+        z-index: -10;
+        opacity: 0;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        min-width: 100vw;
+        font-size: 200px;
+        height: 100%;
+        transition: all 1.5s ease;
+        transform: scale(1.1);
+    }
+
+    .slide.isSelected {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+
+
+    .goLeft {
+        position: absolute;
+        top: 50%;
+        z-index: 9998;
+        left: 30px;
+        outline: none;
+        border: none;
+        background: transparent;
+    }
+
+    .goRight {
+        position: absolute;
+        z-index: 9998;
+        border: none;
+        background: transparent;
+        top: 50%;
+        right: 30px;
+
+    }
+
+    .slideBtn {
+        display: none;
+        
+        flex-direction: row;
+    }
+
+    .btn {
+        border-radius: 50%;
+        width: 50px;
+        outline: none;
+        height: 50px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transition: all 1s;
+    }
+
+    .btn:hover {
+        background: rgba(0, 0, 0, .1);
+    }
+
+    .btn img {
+        width: 20px;
+        border-radius: 50px;
+    }
+
+    .bg img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

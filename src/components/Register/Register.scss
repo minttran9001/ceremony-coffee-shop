@@ -1,0 +1,72 @@
+@media screen and (min-width:900px)
+{
+    .register{
+        width: 100%;
+        display: flex;
+        padding: 100px 200px;
+        align-items: center;
+        img{
+            flex: .5;
+            width: 400px;
+            margin-right: 100px;
+        }
+        .loginBox{
+            flex: 1;
+            h6{
+                font-family: 'Philosopher', sans-serif;
+                font-size: 30px;
+                color: #a9855b;
+                letter-spacing: 2.5px;
+                margin-bottom: 50px;
+            }
+        }
+        .signInForm{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 0px;
+        }
+    }
+    .beans{
+        display: none;
+    }
+}
+@media screen and (max-width:900px)
+{
+    .register{
+        .beans{
+            display: block;
+            width: 100px;
+            position: absolute;
+            left: 0;
+        }
+        width: 80%;
+        display: flex;
+        margin: auto;
+        padding: 100px 0;
+        align-items: center;
+        img{
+            flex: .5;
+            display: none;
+            width: 400px;
+            margin-right: 100px;
+        }
+        .loginBox{
+            flex: 1;
+            h6{
+                font-family: 'Philosopher', sans-serif;
+                font-size: 30px;
+                color: #a9855b;
+                letter-spacing: 2.5px;
+                margin-bottom: 50px;
+            }
+        }
+        .signInForm{
+            margin: auto;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+        }
+    }
+}

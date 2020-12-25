@@ -1,0 +1,17 @@
+.topSellers{
+    width: 100%;
+    min-height: 100%;
+    .topSellersTitle{
+       
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: -100px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        p{
+            letter-spacing: 3px;
+        }
+    }
+}

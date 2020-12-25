@@ -1,0 +1,354 @@
+@media screen and (min-width:900px)
+{
+    .editSub{
+        width: 80%;
+        margin: 150px auto;
+        display: flex;
+        justify-content: center;
+        .yourSub{
+            width: 100%;
+            .link{
+                margin-top: 50px;
+                text-decoration: none;
+                color: #222;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                .icon{
+                    margin-right: 20px;
+                }
+    
+            }
+            .orderTable{
+            
+                width: 100%;
+                transition: all 1s;
+                
+                .title{
+                    margin-bottom: 40px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content:space-between;
+                    .icon:hover{
+                        transform:rotate(180deg);
+                    }
+                    .icon{
+                        transition: all .5s ;
+                        cursor: pointer;
+                        font-size: 20px;
+                    }
+                    h5{
+                        color: #222;
+                        font-size: 30px;
+                    }
+                }
+                padding: 0px 40px;
+                background-color: transparent;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 30%;
+                justify-content: center;
+                width: 100%;
+                
+                .rowHead
+                {
+                
+                }
+                .save{
+                    button{
+                        width: 200px;
+                    }
+                   
+                }
+                .row{
+                    font-size: 15px;
+                    padding: 20px 0;
+                    border-bottom: 1px solid #c9c9c9;
+                    width: 100%;
+                    
+                    align-items: center;
+                    display: flex;
+                    
+                    .col{
+                       flex: 1;
+                       input{
+                           width: 50%;
+                       }
+                       .itemOr{
+                           display: flex;
+                           flex-direction: column;
+                       }
+                        img{
+                            width: 70px;
+                        }
+                    }
+                }
+                .row:last-child{
+                    border: none;
+                }
+            }
+        }
+        .productList{
+            margin-top: 100px;
+                overflow-y:scroll;
+                height: 500px;
+                
+            .buildProduct {
+                padding: 30px;
+                display: flex;
+                border-top: 1px solid rgb(206, 206, 206);
+                margin: 10px 0;
+    
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+    
+                .selection {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+    
+                    justify-content: center;
+    
+                    img {
+                        margin: auto;
+                        margin-bottom: 10px;
+                        width: 150px;
+                    }
+    
+                    p {
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        font-size: 15px;
+                    }
+                    span{
+                        text-align: center;
+                        font-size: 15px;
+                    }
+                    .selected{
+                        background: red;
+                    }
+                    .updateSub{
+                        margin-bottom: 10px;
+                        span{
+                            cursor: pointer;
+                            font-size: 40px;
+                        }
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    
+                    .selectGroup {
+                        font-size: 15px;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px 0;
+                    }
+    
+                }
+    
+                .select {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    button:hover{
+                        background-color: rgb(153, 152, 152);
+                      }
+                    button {
+                        border: none;
+                        outline: none;
+                        padding: 10px;
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:900px)
+{
+    .editSub{
+        width: 100%;
+        margin: 150px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .yourSub{
+            width: 100%;
+            .link{
+                margin-top: 50px;
+               
+                margin: auto 0;
+                text-decoration: none;
+                color: #222;
+                font-size: 15px;
+                display: flex;
+                flex-direction: column;
+                padding: 20px 0;
+                align-items: center;
+                .icon{
+                    margin-right: 20px;
+                }
+    
+            }
+            .orderTable{
+            
+                
+                transition: all 1s;
+                
+                .title{
+                    margin-bottom: 40px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content:space-between;
+                    .icon:hover{
+                        transform:rotate(180deg);
+                    }
+                    .icon{
+                        transition: all .5s ;
+                        cursor: pointer;
+                        font-size: 20px;
+                    }
+                    h5{
+                        color: #222;
+                        font-size: 30px;
+                    }
+                }
+             
+                background-color: transparent;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 30%;
+                justify-content: center;
+                width: 80%;
+                margin: auto;
+                
+                .rowHead
+                {
+                
+                }
+                .save{
+                    button{
+                        width: 200px;
+                    }
+                   
+                }
+                .row{
+                    font-size: 15px;
+                    padding: 20px 0;
+                    border-bottom: 1px solid #c9c9c9;
+                    width: 100%;
+                    
+                    align-items: center;
+                    display: flex;
+                    
+                    .col{
+                       flex: 1;
+                       input{
+                           width: 50%;
+                       }
+                       .itemOr{
+                           display: flex;
+                           flex-direction: column;
+                       }
+                        img{
+                            width: 70px;
+                        }
+                    }
+                }
+                .row:last-child{
+                    border: none;
+                }
+            }
+        }
+        .productList{
+            margin-top: 100px;
+                overflow-y:scroll;
+                height: 500px;
+                
+            .buildProduct {
+                padding: 30px;
+                display: flex;
+                border-top: 1px solid rgb(206, 206, 206);
+                margin: 10px 0;
+    
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+    
+                .selection {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+    
+                    justify-content: center;
+    
+                    img {
+                        margin: auto;
+                        margin-bottom: 10px;
+                        width: 150px;
+                    }
+    
+                    p {
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        font-size: 15px;
+                    }
+                    span{
+                        text-align: center;
+                        font-size: 15px;
+                    }
+                    .selected{
+                        background: red;
+                    }
+                    .updateSub{
+                        margin-bottom: 10px;
+                        span{
+                            cursor: pointer;
+                            font-size: 40px;
+                        }
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    
+                    .selectGroup {
+                        font-size: 15px;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px 0;
+                    }
+    
+                }
+    
+                .select {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    button:hover{
+                        background-color: rgb(153, 152, 152);
+                      }
+                    button {
+                        border: none;
+                        outline: none;
+                        padding: 10px;
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

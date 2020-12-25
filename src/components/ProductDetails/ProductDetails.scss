@@ -1,0 +1,659 @@
+
+@media screen and (max-width:900px)
+{
+  .scrollDetails{
+    transition:all 1s ease;
+    background: #fff;
+  }
+  .productDetail {
+    transition:all 1s ease;
+    width: 100vw;
+    height: 10%;
+    z-index: 10;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .details.fade{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .details {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .productImg {
+    margin-top: 100px;
+    width: 100%;
+    z-index: -1;
+  }
+  .productImg img {
+    // transform: translateY(100%);
+    transition: 1.5s;
+    width: 300px;
+    opacity: 0;
+    display: flex;
+    margin: auto;
+  }
+  .productDetails.fade{
+    .productType{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .productName{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .productCate{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .productPrice{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .productProp{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .productQuantity{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .productQuantityNum{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .selectBox{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .addToCart{
+      transform: translateY(0%);
+      opacity: 1;
+
+    }
+  }
+  .productDetails {
+    height: 100%;
+    width: 90%;
+    margin: 100px auto;
+    p:nth-child(1) {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.1s ease;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    h5 {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.2s ease;
+      font-size: 25px;
+      letter-spacing: 3px;
+    }
+    p {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.3s ease;
+      margin: 10px 0px;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+    p:nth-child(5) {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.4s ease;
+      font-size: 10px;
+    }
+    p:nth-child(6) {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.5s ease;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+    p:nth-child(7) {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.6s ease;
+      font-size: 13px;
+    }
+    .selectBox {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.7s ease;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      label {
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+      > div {
+        display: flex;
+        position: relative;
+        select {
+          
+          cursor: pointer;
+          margin-top: 10px;
+          border: none;
+          font-family: "Philosopher", sans-serif;
+          background: transparent;
+          outline: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          option {
+            color: #222;
+            font-family: "Philosopher", sans-serif;
+          }
+        }
+      }
+      img {
+        width: 15px;
+        transform: rotate(180deg);
+        margin-left: 10px;
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+      }
+    }
+    .addToCart {
+      transform: translateY(50px);
+      opacity: 0;
+      transition: all 1.8s ease;
+      cursor: pointer;
+      margin-top: 10px;
+      background-color: black;
+      color: white;
+      font-size: 11px;
+      font-family: "Philosopher", sans-serif;
+      padding: 20px;
+      letter-spacing: 2px;
+      outline: none;
+      border: none;
+      transition: all 0.5s;
+    }
+    button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  .moreDetails{
+    .moreDetailsTitle.fade{
+      p:nth-child(1) {
+        overflow: hidden;
+        transform: translateY(0);
+        opacity: 1;
+      }
+      h5:nth-child(2) {
+        overflow: hidden;
+        transform: translateY(0);
+        opacity: 1;
+      }
+      hr{
+        width: 100px;
+      }
+      p:nth-child(4) {
+        overflow: hidden;
+        transform: translateY(0);
+        opacity: 1;
+      }
+      p {
+        overflow: hidden;
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+  .moreDetails {
+    background-image: url("../../images/100ppi/beans3.png");
+    background-repeat: no-repeat;
+    background-size: 150px auto;
+    height: 100%;
+    z-index: 1;
+    padding-top: 100px;
+    display: flex;
+    padding-bottom: 100px;
+    flex-direction: column;
+    width: 100%;
+    .moreDetailsTitle {
+      width: 80%;
+      overflow: hidden;
+      margin: auto;
+      p:nth-child(1) {
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s;
+        color: #222;
+        font-size: 12px;
+        margin-bottom: 40px;
+      }
+      h5:nth-child(2) {
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s;
+        font-size: 30px;
+        letter-spacing: 3px;
+      }
+      hr {
+        transition: all 2s ease-in;
+        width: 0px;
+        margin: 40px 0;
+        height: 1px;
+        background-color: #222;
+        border: none;
+      }
+      p:nth-child(4) {
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s;
+        font-size: 13px;
+        font-style: italic;
+        margin: 30px 0px;
+      }
+      p {
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 2s ease;
+        width: 78%;
+        color: #222;
+        margin-bottom: 40px;
+      }
+    }
+    .moreDetailsColor.fade{
+      h5 {
+
+        transform: translateY(0);
+        opacity: 1;
+      }
+      p {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      img {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .moreDetailsColor {
+      min-height: 100%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 50px auto;
+      h5 {
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s;
+        font-size: 30px;
+        letter-spacing: 3px;
+      }
+      p {
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition-delay: 2000ms;
+        transition: all 2s ease;
+        color: #222;
+
+        margin-top: 30px;
+      }
+      img {
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s;
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
+  }
+  
+}
+@media screen and (min-width:900px)
+{
+  .scrollDetails{
+    transition:all 1s ease;
+  }
+  .productDetail {
+    transition:all 1s ease;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: 10;
+    position: relative;
+  }
+  .details.fade{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .details {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+  .productImg {
+    margin-top: 100px;
+    width: 100%;
+    z-index: -1;
+  }
+  .productImg img {
+    transition-delay: 2s;
+    transition: all 1s;
+    // transform: translateY(120%);
+    opacity: 0;
+    width: 300px;
+    display: flex;
+    margin: auto;
+  }
+  .productDetails.fade{
+    .productType{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .productName{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .productCate{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .productPrice{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .productProp{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .productQuantity{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .productQuantityNum{
+      transform: translateX(0%);
+      opacity: 1;
+     
+    }
+    .selectBox{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .addToCart{
+      transform: translateY(0%);
+      opacity: 1;
+
+    }
+  }
+  .productDetails {
+    margin-top: 100px;
+    position: sticky;
+    height: 100%;
+    right: 200px;
+    top: 100px;
+    p:nth-child(1) {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.1s ease;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-bottom: 0px;
+    }
+    .productName {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.2s ease;
+      font-size:30px;
+      letter-spacing: 3px;
+    }
+    p {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.3s ease;
+      margin: 20px 0px;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+    p:nth-child(5) {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.4s ease;
+      font-size: 10px;
+    }
+    p:nth-child(6) {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.5s ease;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+    p:nth-child(7) {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.6s ease;
+      font-size: 13px;
+    }
+    .productQuantity{
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .productQuantityNum{
+      cursor: pointer;
+      background-color: transparent;
+      outline: none;
+      margin: 10px 0 0 0;
+      border: #222;
+    }
+    .selectBox {
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 1.7s ease;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      label {
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+      > div {
+        display: flex;
+        select {
+          cursor: pointer;
+          width: 100%;
+          margin-top: 10px;
+          border: none;
+          font-family: "Philosopher", sans-serif;
+          background: transparent;
+          outline: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          option {
+            color: #222;
+            font-family: "Philosopher", sans-serif;
+          }
+        }
+      }
+      img {
+        width: 15px;
+        transform: rotate(180deg);
+        margin-left: 10px;
+        position: absolute;
+        right: 0;
+      }
+    }
+    .addToCart {
+      transform: translateY(50px);
+      opacity: 0;
+      transition: all 1.8 ease;
+      cursor: pointer;
+      margin-top: 10px;
+      background-color: black;
+      color: white;
+      font-size: 11px;
+      font-family: "Philosopher", sans-serif;
+      padding: 20px;
+      letter-spacing: 2px;
+      outline: none;
+      border: none;
+      transition: all 0.5s;
+    }
+    button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  .moreDetails{
+    transition: all 1s;
+    .moreDetailsTitle.fade{
+      p:nth-child(1) {
+        overflow: hidden;
+        transform: translateY(0);
+        opacity: 1;
+      }
+      hr{
+        width: 100px;
+      }
+      h5:nth-child(2) {
+        overflow: hidden;
+        transform: translateY(0);
+        opacity: 1;
+      }
+      p:nth-child(4) {
+        overflow: hidden;
+        transform: translateY(0);
+        opacity: 1;
+      }
+      p {
+        overflow: hidden;
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+  
+  .moreDetails {
+    background-image: url("../../images/100ppi/beans3.png");
+    background-repeat: no-repeat;
+    background-size: 150px auto;
+    height: 100%;
+    z-index: 1;
+    transition: all 1s;
+    padding-top: 100px;
+    display: flex;
+    width: 100%;
+    .moreDetailsTitle {
+      width: 30%;
+      margin-left: 200px;
+      p:nth-child(1) {
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s;
+        color: #222;
+        font-size: 12px;
+        margin-bottom: 40px;
+      }
+      h5:nth-child(2) {
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s;
+        font-size: 30px;
+        letter-spacing: 3px;
+      }
+      hr {
+        width: 0px;
+        transition-delay:  2s;
+        transition: all 1s ease-in;
+        margin: 40px 0;
+        height: 1px;
+        background-color: #222;
+        border: none;
+      }
+      p:nth-child(4) {
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s;
+        font-size: 13px;
+        font-style: italic;
+        margin: 30px 0px;
+      }
+      p {
+
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition-delay: 2000ms;
+        transition: all 2s ease;
+        width: 78%;
+        color: #222;
+
+        margin-bottom: 40px;
+      }
+    }
+    .moreDetailsColor.fade{
+      h5 {
+
+        transform: translateY(0);
+        opacity: 1;
+      }
+      p {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      img {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .moreDetailsColor {
+      min-height: 100%;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      padding-left: 40px;
+  
+      h5 {
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s;
+        font-size: 30px;
+        letter-spacing: 3px;
+      }
+      p {
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition-delay: 2000ms;
+        transition: all 2s ease;
+        color: #222;
+
+        margin-top: 30px;
+      }
+      img {
+        overflow: hidden;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 1s;
+        margin-top: 30px;
+        width: 300px;
+      }
+    }
+  }
+  
+}

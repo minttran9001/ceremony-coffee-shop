@@ -1,0 +1,321 @@
+@media screen and (max-width:900px) {
+
+  .freshest {
+    background-image: url("../../images//100ppi/beans3.png");
+    background-repeat: no-repeat;
+    background-size: 150px auto;
+    background-color: #fcfbf9;
+    color: #222;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10000;
+  }
+
+  .freshProduct {
+    opacity: 0;
+    margin: auto;
+    transform: translateX(-120%);
+    cursor: pointer;
+    transition: all 0.5s;
+
+  }
+
+  .product {
+    overflow: hidden;
+    margin: 20px;
+    position: relative;
+    transition: all 1s;
+    height: 100%;
+  }
+
+  .product:hover {
+    &.product img {
+      transition: all 1s;
+      transform: scale(1.04);
+    }
+  }
+
+  .product img {
+    width: 300px;
+  }
+
+  .freshest .productDetail {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .productDetail p {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .productDetail .productName {
+    font-size: 17px;
+    padding-top: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .freshText {
+    z-index: 100;
+    text-align: center;
+    color: #222;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .freshText .freshTitle {
+    font-style: normal;
+    font-size: 12px;
+    transform: translateY(100%);
+    letter-spacing: 2px;
+    opacity: 0;
+
+    height: 20px;
+    overflow: hidden;
+  }
+
+  .freshText h5 {
+    opacity: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    color: #a9855b;
+    transform: translateY(100%);
+    padding-top: 20px;
+    position: sticky;
+    font-size: 30px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    // opacity: 0;
+
+    // transform: translateY(100%);
+  }
+  .freshText .freshSub{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .freshText p {
+    opacity: 0;
+    font-size: 12px;
+    overflow: hidden;
+    margin: 10px 0;
+    transform: translateY(100%);
+    width: 70%;
+  }
+
+  .freshText .freshBtn {
+    background: transparent;
+    transform: translateY(100%);
+    outline: none;
+    border: none;
+    font-family: "Philosopher", sans-serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+    position: relative;
+    display: flex;
+    color: #222;
+    text-decoration: none;
+    font-weight: 900;
+    margin-top: 30px;
+    cursor: pointer;
+    justify-content: center;
+    transition: all 0.5s;
+    border-bottom-width: 0%;
+  }
+
+  .freshText .fresnBtn::before {
+    content: "";
+    bottom: -5px;
+    width: 0%;
+    position: absolute;
+    height: 1px;
+    background-color: #000;
+    transition: width 0.6s;
+  }
+
+  .freshText .fresnBtn:hover::before {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width:900px) {
+
+  .freshest {
+    background-image: url("../../images//100ppi/beans6.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 70px auto;
+    background-color: #fcfbf9;
+    color: #222;
+    margin-top: 40px;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10000;
+  }
+
+  .freshProduct {
+    opacity: 0;
+    flex: 1;
+    position: relative;
+    display: flex;
+    transform: translateX(-100%);
+    cursor: pointer;
+    padding-left: 50px;
+
+  }
+
+  .product {
+    position: relative;
+    transition: all 1s;
+    align-items: center;
+    display: flex;
+  }
+
+  .product:after {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 25px solid #fcfbf9;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+  }
+
+  .product:hover {
+    &.product img {
+      transition: all 1s;
+      transform: scale(1.06);
+    }
+  }
+
+  .freshProduct img {
+    width: 350px;
+
+    margin-left: 20px;
+  }
+
+  .freshest .productDetail {
+    padding-left: 30px;
+    position: absolute;
+    align-items: center;
+    margin: auto;
+
+    bottom: -400px;
+    width: 350px;
+    text-align: center;
+  }
+
+  .productDetail p {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .productDetail .productName {
+    font-size: 17px;
+    padding-top: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .freshText {
+    flex:1;
+    z-index: 100;
+    text-align: center;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    flex-direction: column;
+  }
+
+  .freshText .freshTitle {
+    opacity: 0;
+    font-style: normal;
+    transform: translateY(100%);
+    font-size: 13px;
+    position: sticky;
+    overflow: hidden;
+    letter-spacing: 2px;
+  }
+
+  .freshText h5 {
+    opacity: 0;
+
+    transform: translateY(100%);
+    overflow: hidden;
+
+    margin-top: 20px;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    color: #a9855b;
+    letter-spacing: 4px;
+  }
+  .freshest .freshSub{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .freshText p {
+    opacity: 0;
+
+    transform: translateY(100%);
+    overflow: hidden;
+
+    font-style: italic;
+    font-size: 14px;
+    margin: 10px 0;
+    width: 70%;
+  }
+
+  .freshText .shopNowBtn {
+
+    overflow: hidden;
+    background: transparent;
+    transform: translateY(100%);
+    outline: none;
+    border: none;
+    font-family: "Philosopher", sans-serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+    position: relative;
+    padding: 5px 0;
+    &:hover{
+      &::before{
+        width: 100%;
+      }
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      transition: all .5s;
+      height: 1px;
+      bottom: 0;
+      background-color: #222;
+      width: 0%;
+      left: 0;
+    }
+  }
+
+}

@@ -1,0 +1,164 @@
+@media screen and(max-width:900px)
+{
+   
+    .footer{
+        width: 100%;
+        margin: 100px auto 100px auto ;
+       
+        height: 100%;
+        transition: all 1s ease;
+        flex-direction: column;
+        color: #DED4CA;
+        background-color: #242222;
+        display: flex;
+        .right{
+            margin: auto;
+            width: 80%;
+            padding: 50px 0 0 0;
+            .title{
+                font-size: 23px;
+            }
+            .linkSocial{
+                font-size: 13px;
+                letter-spacing: 2px;
+                display: flex;
+                margin-top: 50px;
+                flex-direction: column;
+                a{
+                    margin: 5px 0;
+                }
+            }
+        }
+        .left{
+            margin: auto;
+
+            // padding: 0 50px;
+            width: 80%;
+            .service{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                font-size: 15px;
+                span{
+                    width: 100%;
+                    transition: all 1s ease;
+                    cursor: pointer;
+                    position: relative;
+                    padding: 5px 0;
+                    
+                }
+                span:hover{
+                    &::before{
+                        width: 100%;
+                    }
+                }
+                span::before{
+                    content: '';
+                    position: absolute;
+                    width: 0%;
+                    transition: all 1s ease;
+                    height: 1px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #fff;
+                }
+            }
+            .quote{
+                background-color: #fff;
+
+                width: 100%;
+                margin: 50px auto;
+                img{
+                    width: 100%;
+                    color: #fff;
+                    
+                }
+            }
+        }
+    }
+    .footer.scrolledFooter{
+        background-color: #242222;
+        
+    }
+    
+    
+    
+}
+@media screen and(min-width:900px)
+{
+    .footer{
+        width: 100%;
+        margin-top: 100px;
+        height: 100%;
+        opacity: 0;
+        transition: all 2s ease;
+        color: #DED4CA;
+        background-color: #242222;
+        display: flex;
+        .right{
+            flex: 1;
+            padding: 100px;
+            .title{
+                font-size: 23px;
+            }
+            .linkSocial{
+                font-size: 13px;
+                letter-spacing: 2px;
+                display: flex;
+                margin-top: 100px;
+                flex-direction: column;
+                a{
+                    margin: 5px 0;
+                }
+            }
+        }
+        .left{
+            flex: 0.5;
+            padding: 100px;
+            .service{
+                display: flex;
+                flex-direction: column;
+                font-size: 15px;
+                width: 50%;
+                span{
+                    width: 100%;
+                    transition: all 1s ease;
+                    cursor: pointer;
+                    position: relative;
+                    padding: 5px 0
+                    
+                }
+                span:hover{
+                    &::before{
+                        width: 100%;
+                    }
+                }
+                span::before{
+                    content: '';
+                    position: absolute;
+                    width: 0%;
+                    transition: all 1s ease;
+                    height: 1px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #fff;
+                }
+            }
+            .quote{
+                background-color: #fff;
+                margin-top: 50px;
+                padding: 20px;
+                img{
+                    width: 100%;
+                    color: #fff;
+                    
+                }
+            }
+        }
+    }
+    .scrolledFooter{
+        opacity: 1;
+    }
+    
+    
+}
