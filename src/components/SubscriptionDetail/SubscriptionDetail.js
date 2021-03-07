@@ -12,7 +12,7 @@ export default function SubscriptionDetail() {
     <div className="subscriptionDetail">
       <div className='wrap'>
       <div className="left">
-        <img src="//cdn.shopify.com/s/files/1/2220/0129/products/ceremony-coffee-roasters-subscription-origin-set_004d957f-0365-485f-97bc-eaae24b07704_480x480.jpg?v=1517587235" />
+        <img alt='banner' src="//cdn.shopify.com/s/files/1/2220/0129/products/ceremony-coffee-roasters-subscription-origin-set_004d957f-0365-485f-97bc-eaae24b07704_480x480.jpg?v=1517587235" />
       </div>
       <div className="right">
         <div className="detailWrapper">
@@ -33,7 +33,7 @@ export default function SubscriptionDetail() {
                 <option>Whole Beans</option>
                 <option>Espresso Grind</option>
               </select>
-              <img src={arrow} />
+              <img alt='arrow' src={arrow} />
             </div>
           </div>
           <div className="quantity">
@@ -43,7 +43,7 @@ export default function SubscriptionDetail() {
                 <option>Weekly</option>
                 <option>2 Weeks</option>
               </select>
-              <img src={arrow} />
+              <img alt='arrow' src={arrow} />
             </div>
           </div>
           <div className="quantity">
@@ -53,7 +53,7 @@ export default function SubscriptionDetail() {
                 <option>Thusday</option>
                 <option>Friday</option>
               </select>
-              <img src={arrow} />
+              <img alt='arrow' src={arrow} />
             </div>
           </div>
           <div className="subBtn">
@@ -65,7 +65,7 @@ export default function SubscriptionDetail() {
             {/* <h6>Coffee</h6> */}
           </div>
           <div className="cafe">
-            <img src="//cdn.shopify.com/s/files/1/2220/0129/products/EthiopiaHaloHartume.jpg?v=1599157940" />
+            <img alt='cofe' src="//cdn.shopify.com/s/files/1/2220/0129/products/EthiopiaHaloHartume.jpg?v=1599157940" />
             <div className="detail">
               <span>Honduras Perdomo Honey</span>
               <span>12oz</span>
@@ -79,7 +79,7 @@ export default function SubscriptionDetail() {
             </div>
           </div>
           <div className="cafe">
-            <img src="//cdn.shopify.com/s/files/1/2220/0129/products/hondurasperdomo-hero.jpg?v=1599157862" />
+            <img alt='coffee' src="//cdn.shopify.com/s/files/1/2220/0129/products/hondurasperdomo-hero.jpg?v=1599157862" />
             <div className="detail">
               <span>Enthiopia Laayoo Natural</span>
               <span>250gram</span>

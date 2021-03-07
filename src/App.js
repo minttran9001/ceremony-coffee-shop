@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
@@ -20,10 +19,8 @@ import Location from "./pages/Location";
 import Cart from './pages/Cart'
 import EditSubscription from './pages/EditSubscription'
 import LocationDetails from "./pages/LocationDetails";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import Account from "./pages/Account";
-import Fade from "./transition/transition";
-import Highway from "@dogstudio/highway";
 import PopUpRegister from "./components/PopUpRegister/PopUpRegister";
 import Checkout from "./components/Checkout/Checkout";
 import EditProfile from './pages/EditProfile'
